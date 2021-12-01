@@ -66,7 +66,8 @@ foreach($members as $member)
 }
 
 function createdb(){
-
+if(!isset($_SESSION['email']))
+    header("Location: /login.php");
 //database review
 $myfile = fopen("data.csv", "a") or die("cant open file");
 $data = $_POST['mindful_id'].','.$_POST['email'].','.$_POST['date'].','.$_POST['time'].','.$_POST['quantity'].','.date('Y-m-d H:i:s')."\r\n";

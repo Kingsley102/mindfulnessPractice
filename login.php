@@ -11,5 +11,5 @@
   <br>
   <input type="submit" value="登入">
 </form>
-<script>alert('Wrong email or Password! Please Try again!')</script>
+
 <?php include('footer.php'); ?>
